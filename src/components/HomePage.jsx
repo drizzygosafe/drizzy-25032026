@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Offer from './Offer'
 import Hero from './Hero'
 import Why from './Why'
 import How from './How'
@@ -17,13 +16,7 @@ const HomePage = () => {
     <div className="min-h-screen">
       <div className="bg-white">
         <Navbar />
-        <br></br>
-        <div className="mt-11.5">
-          <Offer />
-        </div>
-        <div className="mt-[-50px] md:mt-[-100px]">
         <Hero />
-        </div>
         <Why />
       </div>
       <CurriculumSection/>

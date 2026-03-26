@@ -13,52 +13,41 @@ const DownloadSection = () => {
   // ];
 
   return (
-    <section className="py-2 md:py-6 bg-white relative overflow-hidden">
+    <section className="py-6 md:py-0 bg-white relative overflow-hidden">
       <div id="DownloadSection" className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row  items-center gap-8 md:gap-16 lg:gap-24">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 lg:gap-24">
           {/* Phone Mockups - Centered on Mobile */}
-       {/* Phone Mockups */}
-<div className="w-full md:w-2/5 relative flex items-center justify-center min-h-[420px] md:min-h-[400px]">
+          <div className="w-full md:w-2/5 relative min-h-[600px] flex items-center justify-center">
+            {/* Center Phone */}
+            <div className="relative w-[240px] z-20">
+              <div className="relative border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[500px] w-[260px] shadow-xl">
+                <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                <div className="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[124px] rounded-l-lg"></div>
+                <div className="h-[46px] w-[3px] bg-gray-800 absolute -right-[17px] top-[124px] rounded-r-lg"></div>
+                <div className="rounded-[2rem] overflow-hidden w-full h-full bg-white">
+                  <img src="/drizzy-startng.jpg" alt="App Preview 1" className="w-full h-full object-cover" />
+                </div>
+              </div>
+            </div>
 
-  {/* Center Phone */}
-  <div className="relative z-20 w-[160px] sm:w-[200px] md:w-[240px]">
- <div className="relative border-gray-800 bg-gray-800 border-[10px] md:border-[14px] rounded-[2.5rem] 
-                h-[320px] sm:h-[550px] md:h-[425px] w-full shadow-xl">
-      <div className="rounded-[2rem] overflow-hidden w-full h-full bg-white">
-        <img src="/drizzy-startng.jpg" className="w-full h-full object-cover" />
-      </div>
-    </div>
-  </div>
+            {/* Left Phone - Smaller & Behind (Hidden on Mobile) */}
+            <div className="absolute top-20 left-0 w-[200px] transform -rotate-12 scale-75 opacity-75 z-10 hidden md:block">
+              <div className="relative border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[500px] w-[260px] shadow-xl">
+                <div className="rounded-[2rem] overflow-hidden w-full h-full bg-white">
+                  <img src="/mobile-no-drizzy.jpg" alt="App Preview 2" className="w-full h-full object-cover" />
+                </div>
+              </div>
+            </div>
 
-  {/* Left Phone */}
-  <div className="absolute top-10 left-[-10px] sm:left-[-20px] md:left-[-8px]
-                  w-[160px] sm:w-[160px] md:w-[200px]
-                  transform -rotate-12 scale-75 opacity-70 z-10">
-
-    <div className="relative border-gray-800 bg-gray-800 border-[10px] md:border-[14px]
-                    rounded-[2.5rem] h-[320px] sm:h-[380px] md:h-full w-full shadow-xl">
-
-      <div className="rounded-[2rem] overflow-hidden w-full h-full bg-white">
-        <img src="/mobile-no-drizzy.jpg" className="w-full h-full object-cover" />
-      </div>
-    </div>
-  </div>
-
-  {/* Right Phone */}
-  <div className="absolute top-10 right-[-10px] sm:right-[-20px] md:right-0
-                  w-[160px] sm:w-[160px] md:w-[200px]
-                  transform rotate-12 scale-75 opacity-70 z-10">
-
-    <div className="relative border-gray-800 bg-gray-800 border-[10px] md:border-[14px]
-                    rounded-[2.5rem] h-[320px] sm:h-[380px] md:h-full w-full shadow-xl">
-
-      <div className="rounded-[2rem] overflow-hidden w-full h-full bg-white">
-        <img src="/drizzy-right.jpg" className="w-full h-full object-cover" />
-      </div>
-    </div>
-  </div>
-
-</div>
+            {/* Right Phone - Smaller & Behind (Hidden on Mobile) */}
+            <div className="absolute top-20 right-0 w-[200px] transform rotate-12 scale-75 opacity-75 z-10 hidden md:block">
+              <div className="relative border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[500px] w-[260px] shadow-xl">
+                <div className="rounded-[2rem] overflow-hidden w-full h-full bg-white">
+                  <img src="/drizzy-right.jpg" alt="App Preview 3" className="w-full h-full object-cover" />
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Content - Centered on Mobile, Left-Aligned on Desktop */}
           <div className="w-full md:w-3/5 text-center md:text-left z-30">

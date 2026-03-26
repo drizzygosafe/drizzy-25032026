@@ -4,7 +4,7 @@ export const handleDownload = () => {
   if (/android/i.test(ua)) {
     window.open("https://play.google.com/store/apps/details?id=com.drizzy.user", "_blank");
   } 
-  else if (/iPhone|iPad|iPod|macOS|Macintosh|MacIntel|MacPPC|Mac68K/i.test(ua)) {
+  else if (/iPhone|iPad|iPod/i.test(ua)) {
     window.open("https://apps.apple.com/app/drizzy/id6752537717", "_blank");
   } 
   else {
