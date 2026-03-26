@@ -55,7 +55,7 @@ const How = () => {
             {/* iPhone Mockup - Centered on Mobile and Tablet */}
             <div className="w-full lg:w-2/5 flex justify-center">
      <div className="relative mx-auto border-gray-800 bg-gray-800 border-[10px] sm:border-[14px] rounded-[2rem] sm:rounded-[2.5rem] 
-        h-[420px] sm:h-[500px] lg:h-[600px] 
+        h-full sm:h-full lg:h-full 
             w-[220px] sm:w-[260px] lg:w-[300px] shadow-2xl">
                 <div className="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[72px] rounded-l-lg"></div>
                 <div className="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[124px] rounded-l-lg"></div>
@@ -63,7 +63,7 @@ const How = () => {
                 <div className="h-[64px] w-[3px] bg-gray-800 dark:border-gray-800 absolute -right-[17px] top-[142px] rounded-r-lg"></div>
                 <div className="rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden 
                           w-[200px] sm:w-[240px] lg:w-[272px] 
-                            h-[380px] sm:h-[460px] lg:h-[572px] bg-white">
+                            h-full sm:h-full lg:h-full bg-white">
                   <video 
                     src="./demo-drizzy.mp4" 
                     className="w-full h-full"
